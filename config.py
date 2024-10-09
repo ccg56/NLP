@@ -1,35 +1,33 @@
 
 
-#²ÎÊýÅäÖÃ
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 
-chose_model = 'DPCNN'  # TextCNN, TextRNN, FastText, TextRCNN, TextRNN_Att, DPCNN, Transformer
-
-
-
-
-#Êý¾Ý¼¯Â·¾¶ÅäÖÃ£º
-train_data = '/data/train_data'                     #ÔÚÎÄ¼þ¼ÐTHUCNewsÖÐdataÎÄ¼þ¼ÐÏÂ
-test_data = '/data/test_data'                       #ÔÚÎÄ¼þ¼ÐTHUCNewsÖÐdataÎÄ¼þ¼ÐÏÂ
+chose_model = 'TextCNN'  # TextCNN, TextRNN, FastText, TextRCNN, TextRNN_Att, DPCNN, Transformer
 
 
 
 
-#³¬²ÎÊý
-filter_sizes = [2,3,4,5,6]  #TextCNN ¾í»ýºË´óÐ¡
+#ï¿½ï¿½ï¿½Ý¼ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½
+train_data = '/data/train_data'                     #ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½THUCNewsï¿½ï¿½dataï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+test_data = '/data/test_data'                       #ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½THUCNewsï¿½ï¿½dataï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
 
 
-dropout = 0.5                                              # Ëæ»úÊ§»î
-require_improvement = 1000                                 # Èô³¬¹ý1000batchÐ§¹û»¹Ã»ÌáÉý£¬ÔòÌáÇ°½áÊøÑµÁ·
-num_classes = 2                                            # Àà±ðÊý
-n_vocab = 0                                                # ´Ê±í´óÐ¡£¬ÔÚÔËÐÐÊ±¸³Öµ
-num_epochs = 100                                           # epochÊý
-batch_size = 64                                           # mini-batch´óÐ¡
-pad_size = 80                                            # Ã¿¾ä»°´¦Àí³ÉµÄ³¤¶È(¶ÌÌî³¤ÇÐ)  ²¹Æë
-learning_rate = 1e-3                                       # Ñ§Ï°ÂÊ
 
 
-num_filters = 256                                          # Í¨µÀÊý
-embedding_size = 300                                       #embeddingÏòÁ¿Êý
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+filter_sizes = [2,3,4,5,6]  #TextCNN ï¿½ï¿½ï¿½ï¿½Ë´ï¿½Ð¡
 
-#textrnn
+
+dropout = 0.5                                              # ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
+require_improvement = 1000                                 # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1000batchÐ§ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ñµï¿½ï¿½
+num_classes = 2                                            # ï¿½ï¿½ï¿½ï¿½ï¿½
+n_vocab = 0                                                # ï¿½Ê±ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Öµ
+num_epochs = 100                                           # epochï¿½ï¿½
+batch_size = 78                                            # mini-batchï¿½ï¿½Ð¡
+pad_size = 61                                            # Ã¿ï¿½ä»°ï¿½ï¿½ï¿½ï¿½ÉµÄ³ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½î³¤ï¿½ï¿½)  ï¿½ï¿½ï¿½ï¿½
+learning_rate = 1e-3                                       # Ñ§Ï°ï¿½ï¿½
+
+
+num_filters = 256                                          # Í¨ï¿½ï¿½ï¿½ï¿½
+embedding_size = 300                                       #embeddingï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
