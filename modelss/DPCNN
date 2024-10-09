@@ -91,4 +91,3 @@ class Model(nn.Module):
         # Short Cut
         x = x + px
         return x
-
